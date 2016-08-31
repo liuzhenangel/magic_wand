@@ -1,0 +1,71 @@
+label:before {
+  font-size: 1.5em;
+  font-family: FontAwesome;
+  color: #E5C200;
+  display: inline-block;
+  content: "\f005";
+  position: absolute;
+  margin-left: 54px;
+  margin-top: 23px;
+  z-index: -1;
+}
+
+.content {
+  text-align: center;
+  display: block;
+  margin-top: 200px;
+  position: relative;
+}
+
+.star:before {
+  animation: 1s 1s move linear 300 forwards normal;
+}
+.star1:before {
+  animation: 1s 2s star1 linear 300 forwards normal;
+}
+.star2:before {
+  animation: 1s .6s star2 linear 300 forwards normal;
+}
+.star3:before {
+  animation: 1s 1s star3 linear 300 forwards normal;
+}
+.star4:before {
+  animation: 1s .4s star4 linear 300 forwards normal;
+}
+
+@keyframes move
+{
+  from {
+    margin-left: 54px;
+  }
+  to {
+    margin-left: -40px;
+    font-size: 10px;
+    z-index: 1;
+  }
+}
+
+@keyframes star2
+{
+  from {
+    margin-left: 54px;
+  }
+  to {
+    margin-left: 200px;
+    font-size: 10px;
+    z-index: 1;
+  }
+}
+
+@keyframes star1
+{
+  from {
+    margin-top: 23px;
+    font-size: 3em;
+  }
+  to {
+    margin-top: 90px;
+    font-size: 0px;
+    z-index: 1;
+  }
+}
